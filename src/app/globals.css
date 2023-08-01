@@ -13,3 +13,17 @@
 .absolute_center_y {
     @apply absolute top-1/2 -translate-y-1/2
 }
+
+.canvas {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    opacity: 0;
+    animation: canvas 0.3s 0.5s ease-out forwards;
+}
+
+@keyframes canvas {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
